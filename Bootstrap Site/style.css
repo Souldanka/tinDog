@@ -4,9 +4,11 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat-Bold'; 
+
 }
 p{
     color: #8f8f8f;
+    font-size: 24px;
 }
 
 /* Headings */
@@ -21,7 +23,7 @@ p{
 }
 /* Containers */
 .container-fluid{
-    padding: 7% 15%;
+    padding: 7% 10%;
 }
 
 
@@ -50,6 +52,18 @@ p{
     margin: 5% 3% 5% 0;
 }
 
+.fa-apple{
+    margin-right: 5px;
+    margin-bottom: 0.5px;
+}
+.fa-google-play{
+    width: 14.7px;
+    height: 17px;
+    margin-right: 5px;
+    margin-bottom: 0.5px;
+
+}
+
 /* Title Section */
 #title{
     background-color: #ff4c68;
@@ -76,7 +90,9 @@ p{
    
 }
 .feature-title{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-style: 28px;
+    margin-top: 10px;
 }
 .feature-box{
     padding: 5%;
@@ -99,9 +115,13 @@ p{
    line-height: 1.5;
 }
 .testimonial-image{
-    width: 10%;
+    width: 12%;
     border-radius: 100%;
     margin: 20px;
+}
+.testimonial-title{
+    width: 10%;
+    font-size: 28px;
 }
 #press{
     background-color:#ef8172;
@@ -115,7 +135,7 @@ p{
 /* Pricing section */
 
 #pricing{
-    padding: 100px;
+    padding: 50px;
 }
 
 .price-text{
@@ -138,6 +158,15 @@ p{
 .social-icon{
     margin: 20px 10px;
 }
+.social{
+    color: #8F8F8F;
+}
+.social:hover{
+    color:#FF4C68;
+}
+/* .fa-instagram:hover{
+    background: radial-gradient( #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+} */
 
 @media (max-width:1028px){
     #title{
@@ -146,5 +175,13 @@ p{
     .title-image{
         position: static;
         transform: rotate(0);
+    }
+}
+@media (max-width:600px){
+    .testimonial-title{
+        font-size: 16px;
+    }
+    .section-heading {
+        font-size: 2rem;
     }
 }
